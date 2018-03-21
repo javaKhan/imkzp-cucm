@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../componet/TitleGroupList.dart';
+import 'ucHardWare.dart';
 import 'ucApi.dart';
+import 'ucInfo.dart';
 class UserCenterPage extends StatefulWidget {
   UserCenterPageState createState()=>new UserCenterPageState();
 }
@@ -22,8 +23,8 @@ class UserCenterPageState extends State<UserCenterPage> with SingleTickerProvide
         body: new TabBarView(
           children:[
             new UcApi(),
-            new UcApi(),
-            new UcApi(),
+            new UcHardWare(),
+            new UcInfo(),
           ]
         ),
       ),
